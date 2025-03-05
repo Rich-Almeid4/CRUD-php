@@ -12,11 +12,11 @@ mysqli_query($conn, $sql);
 
 if (mysqli_affected_rows($conn)>0) {
     $_SESSION['mensagem'] = 'Produto cadastrado!';
-    header('Location: index.php');
+    header('Location: index2.php');
     exit;
 }else {
     $_SESSION['mensagem'] = 'Erro ao cadastrar!';
-    header('Location: index.php');
+    header('Location: index2.php');
     exit;
 }
 }
@@ -32,11 +32,11 @@ mysqli_query($conn, $sql);
 
 if (mysqli_affected_rows($conn)>0) {
     $_SESSION['mensagem'] = 'Produto atualizado com sucesso 👍👍👍';
-    header('Location: index.php');
+    header('Location: index2.php');
     exit;
 }else {
     $_SESSION['mensagem'] = 'Erro ao atualizar produto';
-    header('Location: index.php');
+    header('Location: index2.php');
     exit;
 }
 }
@@ -48,11 +48,11 @@ if (isset($_POST['delete'])){
     mysqli_query($conn, $sql);
     if (mysqli_affected_rows($conn)>0) {
         $_SESSION['mensagem'] = 'Deletado com sucesso'; 
-        header('Location: index.php');
+        header('Location: index2.php');
         exit;
     }else{
         $_SESSION['mensagem'] = 'Erro ao deletar'; 
-        header('Location: index.php');
+        header('Location: index2.php');
         exit;
     }
 

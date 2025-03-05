@@ -17,7 +17,7 @@ require 'conecta.php';
             <div class="card">
                 <div class="card-header">
                     <h4> Informações 
-                        <a href="index.php" class="btn btn-danger float-end">Voltar</a>
+                        <a href="index2.php" class="btn btn-danger float-end">Voltar</a>
                     </h4>
                 </div>
                 <div class="card-body">
@@ -43,7 +43,7 @@ require 'conecta.php';
                                 </div>
                      <?php
                     }else{
-                        echo "<h5>Livro não encontrado!</h5>";
+                        echo "<h5>Produto não encontrado!</h5>";
                     }
                 }
                         ?>
