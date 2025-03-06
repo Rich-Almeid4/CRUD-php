@@ -24,7 +24,7 @@ require 'conecta.php';
                     <?php
                     if (isset($_GET['id'])) {
                     $livros_id = mysqli_real_escape_string($conn, $_GET['id']);
-                    echo "ID recebido: " . $livros_id . "<br>";
+ //                   echo "ID recebido: " . $livros_id . "<br>";
                     $sql = "SELECT * FROM `livros` WHERE id='$livros_id'";
                     $query = mysqli_query($conn, $sql);
 

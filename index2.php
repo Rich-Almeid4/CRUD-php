@@ -11,9 +11,12 @@ require 'conecta.php';
     <title>Crud Completo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">  
-</head>
-  <body>
-    <?php include('navbar.php'); ?>
+    </head>
+<header>
+<?php include('navbar.php'); ?>
+
+</header>
+<body>
     <div class="container mt-4">
 <div class="row">    
 <?php include('mensagem.php');?>
@@ -22,7 +25,7 @@ require 'conecta.php';
             <div class="card-header">
 <h4>Produtos
 
-<a href="create.php" class="btn btn-primary float-end">Add livro</a>
+<a href="create.php" class="btn btn-primary float-end">Add</a>
 
 </h4>
 </div>

@@ -27,8 +27,11 @@
     });
 </script>
 </head>
-<body>
+<header>
 <?php include('navbar.php'); ?>
+
+</header>
+<body>
 <div class="container mt-4">
     <div class="col-md-3">
     <input autocomplete="off" id="nome" type="text" class="form-control" placeholder="Usuário">
